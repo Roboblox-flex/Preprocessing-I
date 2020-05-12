@@ -1,1 +1,308 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.header-class {
+  margin: 0;
+  margin-top: 0;
+  height: 20vh;
+}
+.nav-class {
+  margin-right: 1%;
+  width: 50%;
+}
+header {
+  margin: 0;
+  margin-top: 0;
+  height: 20vh;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  header {
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+header nav {
+  margin-right: 1%;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  width: 100%;
+  height: 110%;
+  margin-right: 3.5%;
+  display: flex;
+  justify-content: flex-end;
+}
+.container .img-box {
+  background-color: #94b7e6;
+  width: 90%;
+  height: 100%;
+}
+.container .img-box img {
+  margin-top: 8%;
+  margin-left: 3%;
+  width: 40%;
+}
+.container .img-box .name-title {
+  margin-bottom: 2rem;
+  margin-left: 3%;
+}
+.container .img-box .name-title h1 {
+  font-size: 3rem;
+}
+.container .img-box .name-title h3 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.button {
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button h2 {
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .button h2 {
+    font-size: 1rem;
+  }
+}
+.button button {
+  background-color: grey;
+  margin-top: 1.5rem;
+  height: 2.5rem;
+}
+.middle-section {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.middle-section .box1 {
+  width: 44%;
+  height: 100%;
+}
+.middle-section .box1 h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+.middle-section .box1 p {
+  font-size: 1.2rem;
+  margin-right: 5rem;
+}
+@media (max-width: 500px) {
+  .middle-section .box1 p {
+    font-size: 0.8rem;
+  }
+}
+.middle-section .box2 {
+  width: 43%;
+  height: 100%;
+  margin-right: 3.5%;
+}
+.middle-section .box2 h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+.middle-section .box2 h2 {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+.table {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+.table table,
+.table tr {
+  background-color: #8b98ad;
+}
+@media (max-width: 500px) {
+  .table td {
+    font-size: 1rem;
+  }
+}
+.table tr {
+  width: 100;
+}
+.table .tcolor {
+  background-color: whitesmoke;
+}
+.table #tbold {
+  font-weight: bolder;
+}
+.table table {
+  width: 88%;
+  height: 100%;
+  margin-right: 3.5%;
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+footer nav {
+  background-color: grey;
+  width: 88%;
+  height: 10vw;
+  margin-right: 3.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer nav h1 {
+  font-size: 1.5rem;
+  color: white;
+}
